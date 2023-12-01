@@ -1,0 +1,144 @@
+body{
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+h1{
+    padding-top: 5%;
+}
+
+.container-form{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+/* here is my styling for txt,email, tel, psd */
+
+input[type=text], [type=email], [type=tel], [type=password]{
+    width: 50%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    text-indent: 30px;
+}
+input[type=tel], [type=password]{
+    /* width: 50%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid lightgray; */
+    text-indent: 0px;
+}
+
+input[type=text], [type=email], [type=tel], [type=password]:focus{
+    
+    outline: none;
+    border-radius: 15px;
+    border: 1px solid lightblue;
+    
+    
+}
+::placeholder{
+    font-size: 18px;
+    color: lightblue;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* padding: 0px 35px; */
+}
+
+.user{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    font-size: 25px;
+
+    
+}
+.form-user{
+    position: relative;
+    margin: 20px 0px;
+}
+.submit{
+    
+    padding-bottom: 50px;
+
+    
+}
+input[type=submit]{
+    background-color: rgb(58, 165, 58);
+    width: 53%;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+    
+}
+
+
+/* here is my divider styling */
+
+.divider{
+    display: flex;
+    align-items: center;
+}
+
+.divider::before,.divider::after{
+    content: "";
+    padding: 1px;
+    background-color: lightblue;
+    margin: 5px 180px;
+    flex: 1;
+}
+.divider::before{
+    margin-right:1px;
+}
+.divider::after{
+    margin-left:1px;
+}
+.divider-bg{
+    background-color: white;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    font-weight: bold;
+
+}
+
+.form-class a{
+    background-color: #316FF6;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+.form-class{
+    margin-bottom: 30px;
+}
+a:nth-child(2){
+    background-color:#00acee ;
+}
+a:nth-child(3){
+    background-color:#DB4437 ;
+}
+.fa-brands{
+    padding: 5px;
+}
+
+
+/* here is my mobile responsiveness */
+
+@media(max-width:900px){
+
+
+    .container-form{
+        width: 100%;
+    }
+    p{
+        font-size: 18px;
+    }
+}
